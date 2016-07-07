@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_J2STORE_VIEW_PRODUCT_ITEM_VIEWS_LABEL">
+		<message>
+				<![CDATA[COM_J2STORE_VIEW_PRODUCT_ITEM_VIEWS_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_j2store/models/fields">
+			<field name="customnotice" type="customnotice" label="J2STORE_PRODUCT_ITEM_LAYOUT_CUSTOM_NOTICE_ARTICLE" />
+			<field name="task" type="hidden"  value="view" default="view"/>
+			<field name="id" type="Products" id="j2storesource_articleid"
+			     required="true"
+				   addfieldpath="/administrator/components/com_j2store/models/fields"
+				description="J2STORE_PRODUCT_CHOOSE_ARTICLE_DESC"
+				label="J2STORE_PRODUCT_CHOOSE_ARTICLE_LABEL"/>
+				
+						
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="common" label="J2STORE_PRODUCT_LIST_COMMON" addfieldpath="administrator/components/com_j2store/models/fields">
+		<field name="customnotice" type="customnotice" label="J2STORE_PRODUCT_LAYOUT_CUSTOM_NOTICE_COMMON_OPTIONS" />
+		<field name="subtemplate"
+			type="templatelist"  default=""  description="J2STORE_PRODUCT_SUBTEMPLATE_DESC" label="J2STORE_PRODUCT_SUBTEMPLATE"/>
+			
+			<field name="addtocart_button_class" type="text" class=""
+				label="J2STORE_ADD_TO_CART_BUTTON_CLASS" description="J2STORE_ADD_TO_CART_BTN_CLASS_DESC" />
+			
+			<field name="choosebtn_class" type="text" class=""
+				label="J2STORE_CHOOSEBTN_CLASS" description="J2STORE_CHOOSEBTN_CLASS_DESC" />
+				
+			<field name="show_qty_field" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_qty_field_label" description="j2store_conf_show_qty_field_desc">
+				<option value="1">J2STORE_YES</option>
+				<option value="0">J2STORE_NO</option>
+			</field>	
+				
+			<field name="product_option_price" type="radio" default="1"
+				class="btn-group" label="j2store_conf_product_options_price_label"
+				description="j2store_conf_product_options_price_desc">
+				<option value="1">J2STORE_SHOW</option>
+				<option value="0">J2STORE_HIDE</option>
+			</field>	
+
+		<field name="product_option_price_prefix" type="radio" default="1"
+			class="btn-group" label="j2store_conf_product_options_price_prefix_label"
+			description="j2store_conf_product_options_price_prefix_desc">
+			<option value="1">J2STORE_SHOW</option>
+			<option value="0">J2STORE_HIDE</option>
+		</field>
+		
+		<field name="image_for_product_options" type="radio" default="0"
+			class="btn-group" label="j2store_conf_show_image_for_product_options_label"
+			description="j2store_conf_show_image_for_product_options_desc">
+			<option value="1">J2STORE_SHOW</option>
+			<option value="0">J2STORE_HIDE</option>
+		</field>
+
+		<field name="breadcrumb_category_inclusion" type="radio" default="1"
+			   class="btn-group" label="j2store_conf_breadcrumb_category_inclusion_label"
+			   description="j2store_conf_show_breadcrumb_category_inclusion_desc">
+			<option value="1">J2STORE_SHOW</option>
+			<option value="0">J2STORE_HIDE</option>
+		</field>
+
+		<field name="custom_css" type="textarea" 
+				rows="10" cols="10" label="J2STORE_PRODUCT_CUSTOM_CSS" description="J2STORE_PRODUCT_CUSTOM_CSS_DESC" filter="safehtml"  />
+
+
+		</fieldset>
+		<fieldset name="item_product" label="J2STORE_PRODUCT_LIST_ITEM_VIEW">
+
+			<field name="customnotice" type="customnotice" label="J2STORE_PRODUCT_LAYOUT_CUSTOM_NOTICE_ITEM" />
+			<field name="item_show_page_heading" type="radio" default="0"
+				   class="btn-group" label="j2store_conf_show_page_heading_label"
+				   description="j2store_conf_show_page_heading_desc">
+				<option value="1">J2STORE_SHOW</option>
+				<option value="0">J2STORE_HIDE</option>
+			</field>
+
+			<field name="item_show_title" type="radio" default="1" class="btn-group"
+				label="J2STORE_PRODUCT_SHOW_TITLE_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>
+			<field name="item_title_headertag" type="list" default="1"
+				   label="J2STORE_HEADER_TAG">
+				<option value="1">h1</option>
+				<option value="2">h2</option>
+				<option value="3">h3</option>
+				<option value="4">h4</option>
+				<option value="5">h5</option>
+			</field>
+			
+			<field name="item_show_sdesc" type="radio" default="1" class="btn-group"
+				label="J2STORE_PRODUCT_SHOW_SHORT_DESC_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>
+			<field name="item_show_ldesc" type="radio" default="1" class="btn-group"
+				label="J2STORE_PRODUCT_SHOW_LONG_DESC_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>
+			<field name="item_show_product_base_price" type="radio" default="1" class="btn-group"
+				label="J2STORE_PRODUCT_SHOW_PRODUCT_BASE_PRICE_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>
+			<field name="item_show_product_special_price" type="radio"
+				default="1" class="btn-group" label="J2STORE_PRODUCT_SHOW_PRODUCT_SPECIAL_PRICE_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>
+			
+			<field name="item_show_discount_percentage" type="radio"
+				default="1" class="btn-group" label="J2STORE_PRODUCT_SHOW_DISCOUNT_PERCENTAGE_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>			
+			
+			<field name="item_show_product_sku" type="radio" default="1"
+				class="btn-group" label="J2STORE_PRODUCT_SHOW_PRODUCT_SKU_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>
+			<field name="item_show_product_stock" type="radio" default="1"
+				class="btn-group" label="J2STORE_PRODUCT_SHOW_STOCK_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>			
+			
+			<field name="item_show_product_main_image" type="radio"
+				default="1" class="btn-group" label="J2STORE_PRODUCT_MAIN_IMAGE">
+				<option value="0">J2STORE_NO</option>
+				<option value="1">J2STORE_YES</option>
+			</field>
+			<field name="item_show_product_additional_image" type="radio"
+				default="1" class="btn-group" label="J2STORE_PRODUCT_ADDITIONAL_IMAGE">
+				<option value="0">J2STORE_NO</option>
+				<option value="1">J2STORE_YES</option>
+			</field>
+			<field name="item_product_main_image_width" type="text" class="btn-group"
+				label="J2STORE_PRODUCT_MAIN_IMAGE_WIDTH" />
+
+			<field name="item_product_additional_image_width" type="text"
+				class="btn-group" label="J2STORE_PRODUCT_ADDITIONAL_IMAGE_WIDTH" />
+
+			<field name="item_enable_image_zoom" type="radio" default="1"
+				class="btn-group" label="J2STORE_PRODUCT_ENABLE_IMAGE_ZOOM_EFFECTS">
+				<option value="0">J2STORE_NO</option>
+				<option value="1">J2STORE_YES</option>
+			</field>
+			<field name="item_show_product_manufacturer_name" type="radio"
+				default="0" class="btn-group" label="J2STORE_PRODUCT_MANUFACTURER_NAME">
+				<option value="0">J2STORE_NO</option>
+				<option value="1">J2STORE_YES</option>
+			</field>	
+			
+			<field name="item_show_product_upsells" type="radio"
+				default="0" class="btn-group" label="J2STORE_PRODUCT_UP_SELLS">
+				<option value="0">J2STORE_NO</option>
+				<option value="1">J2STORE_YES</option>
+			</field>
+			<field name="item_show_product_cross_sells" type="radio"
+				default="0" class="btn-group" label="J2STORE_PRODUCT_CROSS_SELLS">
+				<option value="0">J2STORE_NO</option>
+				<option value="1">J2STORE_YES</option>
+			</field>
+			
+			<field name="item_related_product_columns" type="text"
+				default="3" class="btn-group" label="J2STORE_PRODUCT_RELATED_COLUMNS" />
+
+			<field name="item_show_product_specification" type="radio"
+				default="0" class="btn-group" label="J2STORE_PRODUCT_SHOW_SPECIFICATION">
+				<option value="0">J2STORE_NO</option>
+				<option value="1">J2STORE_YES</option>
+			</field>
+			
+			<field name="item_use_tabs" type="radio"
+				default="1" class="btn-group" label="J2STORE_PRODUCT_USE_TABS">
+				<option value="0">J2STORE_NO_TABS</option>
+				<option value="1">J2STORE_TABS</option>				
+			</field>
+			
+			<field name="item_show_back_to" type="radio" default="0" class="btn-group"
+				label="J2STORE_PRODUCT_SHOW_BACK_TO_LABEL">
+				<option value="0">J2STORE_HIDE</option>
+				<option value="1">J2STORE_SHOW</option>
+			</field>
+						
+		</fieldset>
+	</fields>
+</metadata> 

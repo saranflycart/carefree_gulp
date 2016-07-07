@@ -1,0 +1,239 @@
+
+// Home layout2
+.home_layout2{
+	.rse_popular_module{
+		.rse_popular_list{
+			.rs_box{
+				position:relative;
+				padding:0;
+				background: none;
+				border:1px solid #eee;
+				.img-box{
+					
+					a{
+						img{
+							transform: scale(1);
+							opacity:1;
+						}
+					}
+				}
+				.img-box:before{
+					background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+					bottom: 5px;
+					content: "";
+					left:5px;
+					position: absolute;
+					right: 5px;
+					top: 5px;
+					transition: all 300ms ease 0s;
+				}
+				.box-content{
+					position:absolute;
+					display:none;
+					bottom:0;
+					margin-bottom:32px;
+					width:100%;
+					.title{
+						text-align:center;
+						a{
+							color: @brand-primary;
+							&:hover{
+								color: @white;
+							}
+						}
+					}
+					.j2store-product{
+						border-right: 0px;
+						.product-price-container{
+							margin-left:5px;
+							text-align:left;
+							bottom:0;
+							color:@brand-primary;
+							display:inline-block;
+						}
+						.j2store-addtocart-form{
+							margin-top:0px;
+							margin-right: 0;
+							float:none;
+							margin-left:8px;
+							.cart-action-complete{
+								margin-top:0;
+							}
+							.j2store-cart-button{
+								z-index: 1;
+								font-weight:bold;
+								border-radius:0;
+								border:1px solid @brand-primary;
+								background: transparent;
+								color:@brand-primary;
+								text-transform: capitalize;
+								&:hover, &:focus, &:active{
+									outline:none;
+								}
+							}
+						}
+					}
+					.meals{
+						border: 1px solid rgb(238, 238, 238);
+						color: rgb(73, 66, 66);
+						font-size: 11px;
+						height: 31px;
+						padding-left: 1px !important;
+						padding-top: 8px;
+						position: absolute;
+						right: 8px !important;
+						text-align: center;
+						width: 14% !important;
+					}
+					.detail-view a{
+						border:1px solid @white;
+						padding:5px 10px;
+					}
+					.meals i, .detail-view i{
+							color: @white;
+							&:hover{
+								color:@brand-primary;
+							}
+						}
+				}
+				&:hover{
+					box-shadow: 0;
+					.title{
+						a{
+							color:@white;
+						}
+					}
+					.img-box{
+						
+						a{
+							img{
+								transform: scale(1.0);
+								opacity:0.5;
+							}
+						}
+					}
+					.box-content{
+						display:block;
+						.j2store-product{
+							.product-price-container{
+								color:@white;
+							}
+						}
+						.j2store-cart-button{
+							box-shadow: none;
+							background: @white !important;
+							border:1px solid @white;
+						}
+					}
+				}
+			}
+		}
+	}
+	.custom{
+		.custom-gallery{
+			p{
+				padding-bottom:30px;
+			}
+			.custom-pictures{
+				.carousel-gallery{
+					.carousel-inner{
+						.item{
+							.item-img{
+								img{
+									//width:100%;
+									@media screen and(max-width: @screen-xs){
+										width:100%;
+									}
+								}
+							}
+						}
+					}
+					.carousel-control{
+						bottom: 20%;
+						top: 20%;
+						width: 4%;
+						background-image:none;
+						background-color: #eee;
+						display:block;
+						@media screen and(max-width: @screen-xs){
+							display:none;
+						}
+						em{
+							color: @brand-primary;
+							font-size: 20px;
+							font-weight: 800;
+							margin-top: 35px;
+							text-align: center;
+						}
+					}
+					.left{
+						margin-left:28px;
+					}
+					.right{
+						margin-right: 15px;
+					}
+				}
+			}
+		} 
+	}
+	.t3-meals{
+		background-image: linear-gradient(rgba(73, 66, 66, 0.65), rgba(73, 66, 66, 0.65)),url("../../carefree/images/tour_package.png");
+		.custom{
+			.custom-meal{
+				padding:0;
+			}
+		}
+	}
+	.t3-spotlight{
+		.custom{
+			.best{
+				p{
+					margin-bottom:20px;
+				}
+				.icon-box{
+					.awe-icon-list{
+						ul{
+							padding-left:0;
+							list-style: none;
+							li{
+								margin-bottom:15px;
+								img{
+									width:45px;
+									height:45px;
+									border:2px solid @gray;
+									padding:10px;
+									margin-right: 15px;
+								}
+							}
+						}
+					}
+				}
+			}
+		.carousel{
+				.carousel-inner{
+					.item{
+						.testi-img{
+							border-radius: 50%;
+							margin: 0 auto;
+							width: 125px;
+						}
+						.content {
+							margin: 0 auto;
+							text-align: center;
+							width: 80%;
+							font-style:italic;
+							padding-top:40px;
+						}
+					}
+					.carousel-control{
+						background-image:none;
+						.glyphicon{
+							color:@brand-secondary;
+							font-size:18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="j2store" method="upgrade">
+	<name>Direct Checkout</name>
+	<version>1.3</version>
+	<creationDate>November 2015</creationDate>
+	<author>Gokila Priya</author>
+	<authorEmail>supports@j2store.org</authorEmail>
+	<authorUrl>http://www.j2store.org</authorUrl>
+	<copyright>2015 Weblogicx India</copyright>
+	<license>GNU General Public License v2</license>
+	<description>App to direct the customer to checkout page </description>
+	<scriptfile>script.app_directcheckout.php</scriptfile>
+	<files>
+		<filename plugin="app_directcheckout">app_directcheckout.php</filename>
+		<filename>index.html</filename>
+		<folder>app_directcheckout</folder>
+	</files>
+</extension>
